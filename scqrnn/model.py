@@ -16,9 +16,9 @@ class SCQRNNModel(nn.Module):
         super().__init__()
         self.feature_extractor = nn.Sequential(
             nn.Linear(in_features, dense_features),
-            nn.ReLU(),
+            nn.Sigmoid(),
             nn.Linear(dense_features, dense_features),
-            nn.ReLU(),
+            nn.Sigmoid(),
             nn.Linear(dense_features, num_quantiles),
         )
         self.tau = tau
@@ -83,7 +83,7 @@ class SCQRNNRegressor:
             ).mean()
             loss.backward()
             optimizer.step()
-            if (epoch + 1) % 100 == 0 or epoch == 0:
+            if (epoch + 1) % 1000 == 0 or epoch == 0:
                 print(f"Epoch [{epoch + 1}/{self.epochs}] Loss={loss.item():.4f}")
 
         return self
