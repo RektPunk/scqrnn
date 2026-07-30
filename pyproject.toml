@@ -8,7 +8,7 @@ dependencies = [
     "matplotlib>=3.11.1",
     "numpy>=2.5.1",
     "torch>=2.13.0",
-    "torchpsort>=0.1.6",
+    "torchpsort>=0.1.7",
 ]
 
 [dependency-groups]

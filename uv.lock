@@ -800,7 +800,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.11.1" },
     { name = "numpy", specifier = ">=2.5.1" },
     { name = "torch", specifier = ">=2.13.0" },
-    { name = "torchpsort", specifier = ">=0.1.6" },
+    { name = "torchpsort", specifier = ">=0.1.7" },
 ]
 
 [package.metadata.requires-dev]
@@ -877,15 +877,14 @@ wheels = [
 
 [[package]]
 name = "torchpsort"
-version = "0.1.6"
+version = "0.1.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "numpy" },
     { name = "torch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/95/1e/6c9df635a57a31b74288518c6b764377c0fa2418c924016c49edce5725ed/torchpsort-0.1.6.tar.gz", hash = "sha256:568928d59c625b077f5ae71f53c577d950a33ca4b9b143e98ce97ba1c2fc7f62", size = 6154, upload-time = "2026-07-27T02:24:03.705Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ce/cd/8ccdd62c5ea6a6c1806705100075f18df130d24c31fe24a8ab4268a3f92b/torchpsort-0.1.7.tar.gz", hash = "sha256:42fb128a2b6234a9b543da268ab4ba482a4dacc4826e7d2063e78cc753762392", size = 6396, upload-time = "2026-07-30T07:08:38.607Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3d/49/7bbcb9931bbd6e9a084da33bd1c9694284eb332f9da538b04a132aa1d7db/torchpsort-0.1.6-py3-none-any.whl", hash = "sha256:191e8567ab075619dcb71cb54d9cfbcd86512758034d2cdd85c4d51b230ded92", size = 8023, upload-time = "2026-07-27T02:24:02.791Z" },
+    { url = "https://files.pythonhosted.org/packages/fd/f0/6dc886f57087459a42327195e85a343b440f6eda2583de68d8946f765e9d/torchpsort-0.1.7-py3-none-any.whl", hash = "sha256:b2ea6eb4266513c53dc5d39f110b3e59eac53e0f079c67bdda337d8f4831b75c", size = 8183, upload-time = "2026-07-30T07:08:37.699Z" },
 ]
 
 [[package]]
