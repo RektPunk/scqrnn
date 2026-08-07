@@ -1,8 +1,8 @@
 import numpy as np
 import torch
-import torch.nn as nn
 import torchpsort
 from numpy.typing import NDArray
+from torch import nn
 
 
 class SCQRNNModel(nn.Module):
