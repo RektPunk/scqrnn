@@ -27,9 +27,9 @@ if __name__ == "__main__":
     scqrnn_regressor = SCQRNNRegressor(
         quantiles=tau_vec,
         dense_features=20,
-        lr=0.01,
+        lr=0.001,
         epochs=5000,
-        tau=1.0,
+        tau=0.5,
     )
     scqrnn_regressor.fit(x_data, y_data)
     y_pred = scqrnn_regressor.predict(x_test_data)
